@@ -1,6 +1,6 @@
 export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL ?? (process.env.NODE_ENV === "production" ? "" : "http://localhost:4000");
 
-type ApiOptions = { method?: "GET" | "PUT" | "DELETE"; body?: unknown };
+type ApiOptions = { method?: "GET" | "POST" | "PUT" | "DELETE"; body?: unknown };
 
 export class ApiError extends Error {
   constructor(
